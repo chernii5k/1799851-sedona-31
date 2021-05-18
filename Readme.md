@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Марков](https://up.htmlacademy.ru/htmlcss/31/user/1799851).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon).
 
 ---
 
