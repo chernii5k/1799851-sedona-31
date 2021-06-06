@@ -1,0 +1,271 @@
+:root {
+    --basic-white: #FFFFFF;
+    --basic-light-blue: #81B3D2;
+    --basic-grey: #EEEEEE;
+    --basic-light-brown: #766357;
+    --basic-black: #000000;
+    --basic-brown: #604e43;
+    --basic-dark-brown: #503e33;
+    --basic-blue: #669ec0;
+    --basic-dark-blue: #5496bd;
+    --basic-light-grey: #bdbbbc;
+    --basic-easy-grey: #f2f2f2;
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("img/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* global */
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* main-navigation */
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+/* site-navigation */
+
+.site-navigation {
+    list-style-type: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+}
+
+.site-navigation a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+    color: var(--basic-light-blue);
+}
+
+.site-navigation a:focus {
+    color: var(--basic-light-brown);
+}
+
+.site-navigation a:active {
+    color: var(--basic-black);
+    opacity: 30%;
+}
+
+/* main */
+
+.container h2 {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+.reasons-list,
+.inner-reasons-list {
+    list-style-type: none;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-light-brown);
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--basic-brown);
+}
+
+.button:active {
+    background-color: var(--basic-dark-brown);
+}
+
+.contacts-phone {
+    color: inherit;
+}
+
+.main-footer {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.footer-contacts a {
+    color: var(--basic-black);
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: var(--basic-light-blue);
+}
+
+.social-button:hover {
+    background-color: var(--basic-blue);
+}
+
+.social-button:focus {
+    background-color: var(--basic-dark-blue);
+}
+
+.footer-copyright {
+    color:inherit;
+    text-align: right;
+}
+
+.footer-copyright:hover {
+    background-color: var(--basic-light-blue);
+}
+
+.footer-copyright:focus {
+    background-color: var(--basic-light-grey);
+}
+
+.modal {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.search-form {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.search-form input[type="text"] {
+    background-color: var(--basic-easy-grey);
+}
+
+.search-form input:hover[type="text"] {
+    background-color: #EBEBEB;
+}
+
+.search-form input:focus[type="text"] {
+    background-color: #e5e5e5;
+}
+
+.button-number {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #a9a9a9;
+    border: none;
+}
+
+.button-number:hover {
+    background-color: var(--basic-black);
+}
+
+.button-number:focus {
+    background-color: var(--basic-light-blue);
+}
+
+.modal-button {
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basic-light-blue);
+}
+
+.modal-button:hover {
+    background-color: var(--basic-blue);
+}
+
+.modal-button:focus {
+    background-color: var(--basic-dark-blue);
+}
+
+.date-icon-calendar {
+    background-image: url("img/calendar.png");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.sort-form legend {
+    font-size: 16px;
+}
+
+.sort-form ul {
+    list-style: none;
+}
+
+.sort-result {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort-result p {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.result-list {
+    list-style: none;
+}
+
+.result-list a {
+    color: var(--basic-black);
+    opacity: 30%;
+}
+
+.result-list a:hover {
+    color: var(--basic-light-blue);
+}
+
+.result-list a:focus {
+    color: var(--basic-black);
+}
+
+.result-list a:active {
+    color: var(--basic-light-blue);
+}
+
+.choice h3 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.choice-list {
+    list-style: none;
+}
