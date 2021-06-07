@@ -120,6 +120,8 @@ img {
     color: inherit;
 }
 
+/* footer */
+
 .main-footer {
     color: var(--basic-black);
     background-color: var(--basic-white);
@@ -161,6 +163,8 @@ img {
 .footer-copyright:focus {
     background-color: var(--basic-light-grey);
 }
+
+/* modal */
 
 .modal {
     color: var(--basic-black);
@@ -222,6 +226,8 @@ img {
     background-repeat: no-repeat;
 }
 
+/* catalog */
+
 .sort-form legend {
     font-size: 16px;
 }
@@ -268,4 +274,17 @@ img {
 
 .choice-list {
     list-style: none;
+}
+
+.button-show {
+    color: var(--basic-white);
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.button-show:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
 }
