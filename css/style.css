@@ -19,7 +19,6 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--basic-white);
