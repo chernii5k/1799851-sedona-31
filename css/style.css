@@ -190,7 +190,6 @@ img {
 .button-number {
     font: inherit;
     text-align: center;
-    color: var(--basic-white);
     vertical-align: middle;
     text-transform: uppercase;
     background-color: #a9a9a9;
