@@ -12,8 +12,8 @@
     --basic-easy-grey: #f2f2f2;
 }
 
-body {
-    min-width: 960px;
+.page-body {
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -25,6 +25,11 @@ body {
     background-image: url("img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 /* global */
@@ -38,9 +43,110 @@ img {
     height: auto;
 }
 
+/* Grid  */
+
+.page {
+    height: 100%;
+}
+
+.main-header {
+    outline: 5px solid yellow;
+    outline-offset: -5px;
+}
+
+.main-header-logo {
+    justify-self: center;
+    outline: green 3px solid;
+    outline-offset: -3px;
+}
+
+.main-navigation-wrapper {
+    display: grid;
+    outline: greenyellow 3px solid;
+    outline-offset: -3px;
+    grid-template-rows: 1fr;
+    background-color: var(--basic-white);
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-images {
+    display: grid;
+    outline: yellowgreen 3px solid;
+    outline-offset: -3px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-photo {
+    display: grid;
+    outline: var(--basic-light-blue) 3px solid;
+    outline-offset: -3px;
+    grid-template-columns: 1fr;
+    justify-self: center;
+}
+
+.main-text {
+    display: grid;
+    outline: var(--basic-blue) 3px solid;
+    outline-offset: -3px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    justify-self: center;
+}
+
+.reasons-list {
+    display: grid;
+    outline: goldenrod 3px solid;
+    outline-offset: -3px;
+    grid-template-rows: 1fr 1fr min-content min-content min-content;
+    padding: 0;
+    margin-bottom: 0 auto;
+}
+
+.reasons-item {
+    display: grid;
+    outline: black 3px solid;
+    outline-offset: -3px;
+    margin: 10px;
+}
+
+.inner-reasons-list {
+    display: grid;
+    outline: blue 3px solid;
+    outline-offset: -3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 0;
+}
+
+.inner-reasons-item p {
+    text-align: center;
+}
+
+.travel-dates {
+    display: grid;
+    outline: var(--basic-light-blue) 3px solid;
+    outline-offset: -3px;
+    margin-left: 316px;
+    margin-right: 316px;
+}
+
+.map {
+    display: grid;
+    outline: goldenrod 3px solid;
+    outline-offset: -3px;
+    background-position: center;
+}
+
+
+
+
 /* main-navigation */
 
 .main-navigation {
+    display: grid;
+    justify-content: stretch;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
@@ -51,6 +157,9 @@ img {
 
 .site-navigation {
     list-style-type: none;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation-current a:not([href]) {
@@ -225,6 +334,9 @@ img {
 
 /* catalog */
 
+.catalog-current {
+    color: var(--basic-light-brown);
+}
 .sort-form legend {
     font-size: 16px;
 }
