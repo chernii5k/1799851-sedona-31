@@ -186,12 +186,10 @@ img {
     display: grid;
     outline: rgb(26, 158, 14) 3px solid;
     outline-offset: -3px;
-    margin: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-content: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr min-content;
 }
 
-.result-list {
+.sort-result .result-list {
     display: grid;
     outline: rgb(226, 142, 17) 3px solid;
     outline-offset: -3px;
