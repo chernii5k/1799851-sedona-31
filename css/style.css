@@ -68,6 +68,7 @@ img {
     background-color: var(--basic-white);
     padding: 0 10px;
     margin: 0 auto;
+    justify-self: center;
 }
 
 .main-images {
@@ -136,8 +137,83 @@ img {
     display: grid;
     outline: goldenrod 3px solid;
     outline-offset: -3px;
-    background-position: center;
+    justify-content: center;
 }
+
+.main-footer {
+    display: grid;
+    outline: goldenrod 3px solid;
+    outline-offset: -3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.footer-contacts {
+    outline: rgb(15, 184, 65) 3px solid;
+    outline-offset: -3px;
+    justify-self: center;
+}
+    
+
+.footer-social {
+    outline: rgb(51, 221, 51) 3px solid;
+    outline-offset: -3px;
+    justify-self: center;
+}
+
+.footer-copyright {
+    outline: rgb(83, 238, 35) 3px solid;
+    outline-offset: -3px;
+    justify-self: center;
+}
+
+.catalog-container {
+    display: grid;
+    outline: rgb(241, 26, 213) 3px solid;
+    outline-offset: -3px;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.sort-form {
+    display: grid;
+    outline: rgb(42, 125, 192) 3px solid;
+    outline-offset: -3px;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 5px;
+}
+
+.sort-result {
+    display: grid;
+    outline: rgb(26, 158, 14) 3px solid;
+    outline-offset: -3px;
+    margin: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: start;
+}
+
+.result-list {
+    display: grid;
+    outline: rgb(226, 142, 17) 3px solid;
+    outline-offset: -3px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.choice {
+    outline: rgb(230, 154, 14) 3px solid;
+    outline-offset: -3px;
+    margin: 5px;
+}
+
+.choice-list {
+    display: grid;
+    outline: rgb(3, 22, 6) 3px solid;
+    outline-offset: -3px;
+    margin: 0 auto;
+    margin-left: 76px;
+    padding: 0;
+}
+
+
 
 
 
