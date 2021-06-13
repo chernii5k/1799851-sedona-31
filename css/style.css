@@ -13,7 +13,7 @@
 }
 
 .page-body {
-    min-width: 1200px;
+    min-width: 1280px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -21,7 +21,7 @@
     line-height: 21px;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-white);
+    background-color: #888888;
     background-image: url("img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -49,10 +49,14 @@ img {
     height: 100%;
 }
 
+/* main-header */
+
 .main-header {
     outline: 5px solid yellow;
     outline-offset: -5px;
 }
+
+/* logo  */
 
 .main-header-logo {
     justify-self: center;
@@ -60,85 +64,68 @@ img {
     outline-offset: -3px;
 }
 
+/* .main-navigation */
+
+.main-navigation {
+    display: grid;
+    justify-content: stretch;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
 .main-navigation-wrapper {
     display: grid;
     outline: greenyellow 3px solid;
     outline-offset: -3px;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--basic-white);
     padding: 0 10px;
     margin: 0 auto;
-    justify-self: center;
+    text-align: center;
 }
 
-.main-images {
-    display: grid;
-    outline: yellowgreen 3px solid;
-    outline-offset: -3px;
-    margin: 0;
-    padding: 0;
+/* container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.main-photo {
-    display: grid;
-    outline: var(--basic-light-blue) 3px solid;
-    outline-offset: -3px;
-    grid-template-columns: 1fr;
-    justify-self: center;
-}
-
-.main-text {
-    display: grid;
-    outline: var(--basic-blue) 3px solid;
-    outline-offset: -3px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    justify-self: center;
-}
+/* reasons-list */
 
 .reasons-list {
     display: grid;
     outline: goldenrod 3px solid;
     outline-offset: -3px;
-    grid-template-rows: 1fr 1fr min-content min-content min-content;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin-bottom: 0 auto;
 }
 
+/* reasons-item */
+
 .reasons-item {
-    display: grid;
     outline: black 3px solid;
     outline-offset: -3px;
     margin: 10px;
 }
+
+/* inner-reasons-list */
 
 .inner-reasons-list {
     display: grid;
     outline: blue 3px solid;
     outline-offset: -3px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
-    padding: 0;
 }
 
 .inner-reasons-item p {
     text-align: center;
 }
 
-.travel-dates {
-    display: grid;
-    outline: var(--basic-light-blue) 3px solid;
-    outline-offset: -3px;
-    margin-left: 316px;
-    margin-right: 316px;
-}
-
-.map {
-    display: grid;
-    outline: goldenrod 3px solid;
-    outline-offset: -3px;
-    justify-content: center;
-}
+/* footer  */
 
 .main-footer {
     display: grid;
@@ -167,12 +154,15 @@ img {
     justify-self: center;
 }
 
-.catalog-container {
-    display: grid;
+/* catalog  */
+
+.catalog {
     outline: rgb(241, 26, 213) 3px solid;
     outline-offset: -3px;
-    grid-template-rows: min-content 1fr min-content;
+    margin: 0 auto;
 }
+
+/* sort  */
 
 .sort-form {
     display: grid;
@@ -182,11 +172,15 @@ img {
     margin: 5px;
 }
 
+/* sort-result */
+
 .sort-result {
     display: grid;
     outline: rgb(26, 158, 14) 3px solid;
     outline-offset: -3px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .sort-result .result-list {
@@ -194,7 +188,10 @@ img {
     outline: rgb(226, 142, 17) 3px solid;
     outline-offset: -3px;
     grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
 }
+
+/* choice */
 
 .choice {
     outline: rgb(230, 154, 14) 3px solid;
@@ -206,25 +203,11 @@ img {
     display: grid;
     outline: rgb(3, 22, 6) 3px solid;
     outline-offset: -3px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: start;
     margin: 0 auto;
     margin-left: 76px;
     padding: 0;
-}
-
-
-
-
-
-
-/* main-navigation */
-
-.main-navigation {
-    display: grid;
-    justify-content: stretch;
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--basic-black);
-    background-color: transparent;
 }
 
 /* site-navigation */
