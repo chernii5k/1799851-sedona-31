@@ -201,7 +201,7 @@ img {
 
 .choice-list {
     display: grid;
-    outline: rgb(3, 22, 6) 3px solid;
+    outline: rgb(231, 247, 12) 3px solid;
     outline-offset: -3px;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: start;
