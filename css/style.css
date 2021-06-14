@@ -91,6 +91,7 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: var(--basic-white);
 }
 
 /* reasons-list */
@@ -107,9 +108,11 @@ img {
 /* reasons-item */
 
 .reasons-item {
+    display: grid;
     outline: black 3px solid;
     outline-offset: -3px;
     margin: 10px;
+    grid-column: 1/-1;
 }
 
 /* inner-reasons-list */
