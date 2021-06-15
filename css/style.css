@@ -189,8 +189,12 @@ img {
     outline-offset: -3px;
     grid-template-columns: 1fr 1fr 2fr;
     margin: 5px;
+    background-image: url(../img/catalog/background.jpg);
 }
 
+.button-show {
+    grid-column: 3/4;
+}
 /* sort-result */
 
 .sort-result {
@@ -209,11 +213,18 @@ img {
 }
 
 .up {
-    background-image: url("img/catalog/sort-up.svg");
+    background-image: url("../img/catalog/sort-up.svg");
+    background-repeat: no-repeat;
 }
 
 .down {
-    background-image: url("img/catalog/sort-down.svg");
+    background-image: url("../img/catalog/sort-down.svg");
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 /* choice */
 
