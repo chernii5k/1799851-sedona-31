@@ -130,7 +130,7 @@ img {
 
 .inner-reasons-list {
     display: grid;
-    outline: blue 3px solid;
+    outline: rgb(15, 190, 39) 3px solid;
     outline-offset: -3px;
     grid-template-columns: 1fr 1fr 1fr;
 }
