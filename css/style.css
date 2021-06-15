@@ -21,7 +21,7 @@
     line-height: 21px;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: #888888;
+    background-color: var(--basic-easy-grey);
     background-image: url("img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -59,16 +59,15 @@ img {
 /* logo  */
 
 .main-header-logo {
-    justify-self: center;
-    outline: green 3px solid;
-    outline-offset: -3px;
+    position: absolute;
+    padding: 0;
+    left: 45%;
+    right: 45%;
 }
 
 /* .main-navigation */
 
 .main-navigation {
-    display: grid;
-    justify-content: stretch;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
@@ -82,6 +81,12 @@ img {
     background-color: var(--basic-white);
     padding: 0 10px;
     margin: 0 auto;
+    text-align: center;
+}
+
+/* main-image */
+
+.main-image {
     text-align: center;
 }
 
@@ -109,10 +114,16 @@ img {
 
 .reasons-item {
     display: grid;
-    outline: black 3px solid;
+    outline: rgb(247, 9, 9) 3px solid;
     outline-offset: -3px;
     margin: 10px;
     grid-column: 1/-1;
+}
+
+.reasons-item-two {
+    outline: rgb(10, 0, 0) 3px solid;
+    outline-offset: -3px;
+    margin: 5px;
 }
 
 /* inner-reasons-list */
