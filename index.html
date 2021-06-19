@@ -82,7 +82,9 @@
       <section>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
+        <div class="search-button">
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
+        </div>
       </section>
       <h2>Карта</h2>
       <img src="img/map.png" width="1199" height="594" alt="Мы здесь!">
@@ -119,26 +121,40 @@
           <h2>Поиск гостиницы</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <div>
+            <p>
             <label for="arrival-date">Дата заезда:</label>
             <input class="date-icon-calendar" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+            </p>
+            <!-- <img src="img/calendar.svg" width="21" height="23" alt="Календарь"> -->
           </div>
           <div>
+            <p>
             <label for="date-of-departure">Дата выезда:</label>
             <input class="date-icon-calendar" type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
-            <img src="img/calendar2.svg" width="21" height="23" alt="Календарь">
+            </p>
+            <!-- <img src="img/calendar2.svg" width="21" height="23" alt="Календарь"> -->
           </div>
+          <div class="cc">
+          <div class="aa">
           <div>
+            <p>
           <label for="number-of-adults">Взрослые</label>
           <input class="number-icon" type="text" name="number-of-adults" id="number-of-adults" placeholder="2">
+          </p>
           <button class="button-number" type="button">-</button>
           <button class="button-number" type="button">+</button>
           </div>
+          </div>
+          <div class="bb">
           <div>
+            <p>
             <label for="number-of-adults">Дети</label>
             <input class="number-icon" type="text" name="number-of-children" id="number-of-children" placeholder="0">
+            </p>
             <button class="button-number" type="button">-</button>
             <button class="button-number" type="button">+</button>
+            </div>
+            </div>
             </div>
             <button class="modal-button" type="submit">Найти</button>
           </form>

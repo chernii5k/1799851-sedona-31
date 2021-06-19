@@ -61,8 +61,8 @@ img {
 .main-header-logo {
     position: absolute;
     padding: 0;
-    left: 45%;
-    right: 45%;
+    left: 47%;
+    right: 47%;
 }
 
 /* .main-navigation */
@@ -74,20 +74,22 @@ img {
 }
 
 .main-navigation-wrapper {
-    display: grid;
+    display: flex;
+    height: 56px;
+    justify-content: space-around;
+    align-items: center;
     outline: greenyellow 3px solid;
     outline-offset: -3px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--basic-white);
-    padding: 0 10px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* main-image */
 
 .main-image {
     text-align: center;
+    background-image: url(../img/background.jpg);
 }
 
 /* container */
@@ -142,7 +144,8 @@ img {
 /* search-button */
 
 .search-button {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 /* footer  */
 
@@ -194,10 +197,13 @@ img {
 
 .button-show {
     grid-column: 3/4;
+    width: 137px;
 }
 /* sort-result */
 
 .sort-result {
+    display: flex;
+    justify-content: space-around;
     outline: rgb(26, 158, 14) 3px solid;
     outline-offset: -3px;
     margin: 0 auto;
@@ -205,11 +211,13 @@ img {
 }
 
 .sort-result .result-list {
-    display: grid;
+    display: flex;
+    align-items: center;
     outline: rgb(226, 142, 17) 3px solid;
     outline-offset: -3px;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .up {
@@ -226,6 +234,7 @@ img {
     position: fixed;
     transform: scale(0);
 }
+
 /* choice */
 
 .choice {
@@ -235,12 +244,14 @@ img {
 }
 
 .choice-list {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     outline: rgb(231, 247, 12) 3px solid;
     outline-offset: -3px;
-    grid-template-columns: 1fr;
-    align-content: start;
-    margin: 0 auto;
+    /* grid-template-columns: 1fr; */
+    /* align-content: start; */
+    margin: 0;
     margin-left: 37px;
     padding: 0;
 }
@@ -299,6 +310,7 @@ img {
 }
 
 .button {
+    display: inline-block;
     font: inherit;
     text-align: center;
     color: var(--basic-white);
@@ -371,7 +383,14 @@ img {
     background-color: var(--basic-white);
 }
 
+.modal p {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
 .search-form {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
 }
@@ -389,6 +408,7 @@ img {
 }
 
 .button-number {
+    display: inline-block;
     font: inherit;
     text-align: center;
     vertical-align: middle;
