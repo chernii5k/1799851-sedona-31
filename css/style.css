@@ -43,17 +43,10 @@ img {
     height: auto;
 }
 
-/* Grid  */
+/* page  */
 
 .page {
     height: 100%;
-}
-
-/* main-header */
-
-.main-header {
-    outline: 5px solid yellow;
-    outline-offset: -5px;
 }
 
 /* logo  */
@@ -75,11 +68,10 @@ img {
 
 .main-navigation-wrapper {
     display: flex;
+    width: 1200px;
     height: 56px;
     justify-content: space-around;
     align-items: center;
-    outline: greenyellow 3px solid;
-    outline-offset: -3px;
     background-color: var(--basic-white);
     padding: 0;
     margin: 0;
@@ -90,6 +82,15 @@ img {
 .main-image {
     text-align: center;
     background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 509px;
+    margin-top: -35px;
+    padding: 0;
+}
+
+.main-image img {
+    width: 456px;
+    height: 350px;
 }
 
 /* container */
@@ -101,44 +102,101 @@ img {
     background-color: var(--basic-white);
 }
 
+.five-reasons h2 {
+    margin-top: 42.5px;
+    margin-right: 365px;
+    margin-left: 365px;
+}
+
 /* reasons-list */
 
 .reasons-list {
     display: grid;
-    outline: goldenrod 3px solid;
-    outline-offset: -3px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 58px;
     padding: 0;
-    margin-bottom: 0 auto;
+}
+
+.reasons-list img {
+    width: 800px;
+    height: 256px;
 }
 
 /* reasons-item */
 
 .reasons-item {
     display: grid;
-    outline: rgb(247, 9, 9) 3px solid;
-    outline-offset: -3px;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
     grid-column: 1/-1;
 }
 
+.reason-text {
+    width: 400px;
+    height: 256px;
+    background-color: var(--basic-light-blue);
+}
+
+.reason {
+    display: flex;
+}
+
+.reason-text h3 {
+    margin: 0;
+    margin-top: 47px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0;
+}
+
+.reason-text p {
+    padding: 0;
+    margin-top: 23px;
+    margin-bottom: 54px;
+}
+
 .reasons-item-two {
-    outline: rgb(10, 0, 0) 3px solid;
-    outline-offset: -3px;
-    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic-grey);
+}
+
+.reasons-item-two h3 {
+    margin: 0;
+    padding: 0;
 }
 
 /* inner-reasons-list */
 
 .inner-reasons-list {
     display: grid;
-    outline: rgb(15, 190, 39) 3px solid;
-    outline-offset: -3px;
+    height: 332px;
     grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .inner-reasons-item p {
     text-align: center;
+}
+
+/* search */
+
+.search h2 {
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+.search p {
+    padding: 0;
 }
 
 /* search-button */
@@ -146,33 +204,33 @@ img {
 .search-button {
     display: flex;
     justify-content: center;
+    margin-top: 24px;
 }
 /* footer  */
 
 .main-footer {
     display: grid;
-    outline: goldenrod 3px solid;
-    outline-offset: -3px;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 5px;
+    margin: 0 auto;
+    height: 120px;
 }
 
 .footer-contacts {
-    outline: rgb(15, 184, 65) 3px solid;
-    outline-offset: -3px;
     justify-self: center;
+    font-weight: bold;
 }
     
 
 .footer-social {
-    outline: rgb(51, 221, 51) 3px solid;
-    outline-offset: -3px;
     justify-self: center;
+    justify-content: space-aro;
+}
+
+.social {
+    display: flex;
 }
 
 .footer-copyright {
-    outline: rgb(83, 238, 35) 3px solid;
-    outline-offset: -3px;
     justify-self: center;
 }
 
@@ -188,33 +246,34 @@ img {
 
 .sort-form {
     display: grid;
-    outline: rgb(42, 125, 192) 3px solid;
-    outline-offset: -3px;
     grid-template-columns: 1fr 1fr 2fr;
-    margin: 5px;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 217px;
     background-image: url(../img/catalog/background.jpg);
+    background-size: 1200px 217px;
 }
 
 .button-show {
     grid-column: 3/4;
     width: 137px;
 }
+
 /* sort-result */
 
 .sort-result {
     display: flex;
     justify-content: space-around;
-    outline: rgb(26, 158, 14) 3px solid;
-    outline-offset: -3px;
     margin: 0 auto;
     padding: 0;
+    width: 1200px;
+    height: 68px;
 }
 
 .sort-result .result-list {
     display: flex;
     align-items: center;
-    outline: rgb(226, 142, 17) 3px solid;
-    outline-offset: -3px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -249,8 +308,6 @@ img {
     align-items: flex-start;
     outline: rgb(231, 247, 12) 3px solid;
     outline-offset: -3px;
-    /* grid-template-columns: 1fr; */
-    /* align-content: start; */
     margin: 0;
     margin-left: 37px;
     padding: 0;
