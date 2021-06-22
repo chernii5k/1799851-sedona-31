@@ -213,6 +213,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
+    padding: 0;
     height: 120px;
 }
 
@@ -224,7 +225,6 @@ img {
 
 .footer-social {
     justify-self: center;
-    justify-content: space-aro;
 }
 
 .social {
@@ -244,12 +244,23 @@ img {
 /* sort  */
 
 .fieldset-content {
-    justify-self: center;
     margin: 0;
     margin-top: 26.5px;
+    margin-left: 75px;
     padding: 0;
     border: none;
     color: var(--basic-white)
+}
+
+.sort-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sort-item {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
 }
 
 .sort-form {
@@ -271,31 +282,21 @@ img {
     padding: 0;
 }
 
-.checkbox {
+.from-to {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 25px;
-}
-
-.scale {
-    color: var(--basic-white);
-    width: 317px;
-    margin: 0;
-    padding: 0;
-    margin-top: 26.5px;
-    margin-left: 332px;
+    margin-bottom: 55px;
     border: none;
 }
 
-.table {
-    width: 317px;
-    height: 36px;
-    color: var(--basic-white);
-    margin: 0 auto;
+.scale {
+    margin: 0;
+    margin-top: 44.5px;
     padding: 0;
+    border: none;
     text-align: center;
-    border-collapse: collapse;
-    border: 2px solid #FFFFFF;
 }
 
 .button-show {
@@ -304,8 +305,9 @@ img {
     vertical-align: middle;
     grid-column: 3/4;
     width: 137px;
-    margin-top: 55px;
-    margin-right: 168px;
+    /* margin-top: 55px; */
+    /* margin-right: 168px; */
+    justify-content: center;
 }
 
 /* sort-result */
@@ -322,14 +324,14 @@ img {
 .sort-result p {
     margin: 0;
     margin-top: 24px;
-    margin-right: 51px;
+    margin-right: 35px;
     padding: 0;
 }
 
 .sort-result h3 {
     margin: 0;
     margin-top: 24px;
-    margin-right: 35px;
+    margin-right: 51px;
     padding: 0;
 }
 
@@ -452,10 +454,6 @@ img {
 .container h3 {
     font-size: 21px;
     line-height: 21px;
-    text-align: center;
-}
-
-.container p {
     text-align: center;
 }
 
@@ -661,7 +659,7 @@ img {
     border-radius: 2px;
 }
 
-.button-show:focus {
+.button-show:hover {
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
