@@ -307,8 +307,9 @@ img {
 /* footer  */
 
 .main-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 0;
     height: 120px;
 }
@@ -556,6 +557,10 @@ img {
     align-self: flex-end;
 }
 
+.stars-5 {
+    width: 95px;
+}
+
 .stars-4 {
     width: 77px;
 }
@@ -566,6 +571,10 @@ img {
 
 .stars-2 {
     width: 38px;
+}
+
+.stars-1 {
+    width: 19px;
 }
 
 .rating-show {
@@ -665,7 +674,6 @@ img {
 /* footer */
 
 .main-footer {
-    color: var(--basic-black);
     background-color: var(--basic-white);
 }
 
@@ -681,10 +689,30 @@ img {
     list-style: none;
 }
 
+.twitter::before  {
+    content: url("../img/twitter.svg");
+    width: 17px;
+    height: 17px;
+}
+
+.facebook::before {
+    content: url("../img/facebook.svg");
+    width: 12px;
+    height: 22px;
+}
+
+.youtube::before {
+    content: url("../img/youtube.svg");
+    width: 20px;
+    height: 16px;
+}
+
 .social-button {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: inherit;
     margin-right: 6px;
     width: 46px;
     height: 48px;
@@ -697,6 +725,10 @@ img {
 
 .social-button:active {
     background-color: var(--basic-dark-blue);
+}
+
+.social-button:active::before {
+    opacity: 0.3;
 }
 
 .footer-copyright {
@@ -774,12 +806,37 @@ img {
     height: 38px;
     width: 322px;
     border: none;
+    outline: 0;
+    outline-offset: 0;
 }
 
 .calendar {
+    position: absolute;
+    width: 21px;
+    height: 23px;
     background: url("../img/calendar.svg");
     background-repeat: no-repeat;
-    background-position: 98% 50%;
+    transform: translateX(420px);
+}
+
+.button-calendar {
+    display: inline-block;
+    padding: 3 17;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-calendar:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(1297%) hue-rotate(192deg) brightness(104%) contrast(99%);
+}
+
+.button-calendar:active {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(25%) saturate(504%) hue-rotate(159deg) brightness(91%) contrast(86%);
 }
 
 .quantity {
@@ -800,6 +857,8 @@ img {
     height: 38px;
     text-align: center;
     box-sizing: border-box;
+    outline: 0;
+    outline-offset: 0;
 }
 
 .people-quantity {
@@ -834,11 +893,12 @@ img {
 }
 
 .button-number:hover {
-    background-color: var(--basic-black);
+    background-color: var(--basic-easy-grey);
+    color: var(--basic-black);
 }
 
 .button-number:focus {
-    background-color: var(--basic-light-blue);
+    color: var(--basic-light-blue);
 }
 
 .modal-button {
@@ -855,6 +915,7 @@ img {
 
 .modal-button:active {
     background-color: var(--basic-dark-blue);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* checkbox */
@@ -977,7 +1038,18 @@ img {
     border: none;
     padding: 0;
     text-align: center;
+    color: var(--basic-white);
     background-color: transparent;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.price-controls input[type=number]::-webkit-inner-spin-button, 
+.price-controls input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }
 
 .price-controls {   

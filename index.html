@@ -110,13 +110,13 @@
       <h2 class="visually-hidden">Наши соц. сети</h2>
       <ul class="social">
         <li>
-          <a class="social-button" href="#"><img src="img/twitter.svg"></a>
+          <a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/facebook.svg"></a>
+          <a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/youtube.svg"></a>
+          <a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
     </section>
@@ -134,13 +134,15 @@
         <div>
           <p class="dates-item">
             <label for="arrival-date">Дата заезда:</label>
-            <input class="calendar" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+            <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+            <button class="button-calendar calendar" type="button"><span class="visually-hidden">Календарь</span></button>
           </p>
         </div>
         <div>
           <p class="dates-item">
             <label for="date-of-departure">Дата выезда:</label>
-            <input class="calendar" type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+            <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+            <button class="button-calendar calendar" type="button"><span class="visually-hidden">Календарь</span></button>
           </p>
         </div>
         <div class="quantity">
@@ -166,7 +168,7 @@
           </div>
         </div>
       </div>
-      <button class="button modal-button" type="submit">Найти</button>
+      <button class="button modal-button" type="button"><span class="gg">Найти</span></button>
     </form>
   </section>
 </body>
