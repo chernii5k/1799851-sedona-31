@@ -956,8 +956,8 @@ img {
 .sort-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -47px;
-    top: -1.5px;
+    left: -44px;
+    top: 0;
     width: 23px;
     height: 23px;
     background: url("../img/catalog/checkbox.svg") no-repeat 0 0;
@@ -966,8 +966,8 @@ img {
 .sort-input-checkbox:checked + label::before {
     content: "";
     position: absolute;
-    left: -50px;
-    top: -3px;
+    left: -47px;
+    top: -1.4px;
     width: 27px;
     height: 23px;
     background: url("../img/catalog/checkbox-on.svg") no-repeat 0 0;
