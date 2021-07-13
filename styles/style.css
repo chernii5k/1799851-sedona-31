@@ -74,13 +74,29 @@ img {
 
 .main-navigation-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    height: 56px;
-    justify-content: space-around;
+    flex-wrap: wrap;    
+    justify-content: space-between;
     align-items: center;
     background-color: var(--basic-white);
     padding: 0;
     margin: 0;
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 531px;
+    height: 56px;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 531px;
+    justify-content: space-around;
 }
 
 /* main-image */
@@ -964,6 +980,15 @@ img {
 .sort-input-checkbox:checked + label::before {
     background: url("../img/catalog/checkbox-on.svg");
 }
+
+.sort-input-checkbox:disabled + label::before {
+    background: url("../img/catalog/checkbox-disabled.svg");
+}
+
+.sort-input-checkbox:checked:disabled + label::before {
+    background: url("../img/catalog/checkbox-on-disabled.svg");
+}
+
 
 /* range-filter  */
 
