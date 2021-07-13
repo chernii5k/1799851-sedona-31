@@ -947,31 +947,22 @@ img {
 /* checkbox */
 
 .fieldset-content label {
-    position: relative;
-    display: block;
+    display: flex;
     cursor: pointer;
     user-select: none;
 }
 
 .sort-input-checkbox + label::before {
     content: "";
-    position: absolute;
-    left: -44px;
-    top: 0;
-    width: 23px;
+    display: block;
+    margin-right: 16px;
+    width: 27px;
     height: 23px;
     background: url("../img/catalog/checkbox.svg") no-repeat 0 0;
 }
 
 .sort-input-checkbox:checked + label::before {
-    content: "";
-    position: absolute;
-    left: -47px;
-    top: -1.4px;
-    width: 27px;
-    height: 23px;
-    background: url("../img/catalog/checkbox-on.svg") no-repeat 0 0;
-    transform: translate(3px, 1.4px);
+    background: url("../img/catalog/checkbox-on.svg");
 }
 
 /* range-filter  */
