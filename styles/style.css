@@ -79,18 +79,10 @@ img {
     padding: 0;
 }
 
-.main-navigation-wrapper ul {
+.main-navigation ul {
     padding-right: 73px;
     padding-left: 73px;
 }
-
-.main-navigation-wrapper li:nth-child(1) {
-    margin-left: 72px;
-}
-
-.main-navigation-wrapper li:nth-child(4) {
-    margin-right: 72px;
-} 
 
 .main-navigation-wrapper li:nth-child(-n+2) {
     padding-right: 134px;
