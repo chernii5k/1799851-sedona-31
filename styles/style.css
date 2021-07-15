@@ -958,6 +958,14 @@ img {
     background-color: var(--basic-easy-grey);
 }
 
+.quantity input:focus {
+    border: 2px solid #E5E5E5;
+}
+
+.quantity input:hover {
+    background-color: #ebebeb;
+}
+
 .quantity input::placeholder {
     color: var(--basic-black);
     font-weight: 700;
@@ -1008,7 +1016,7 @@ img {
 
 .dates-item input:focus[type="text"] {
     background-color: var(--basic-white);
-    border: 2px solid rgba(230, 230, 230, 0);
+    border: 2px solid #E5E5E5;
 }
 
 /* .minus::before,
@@ -1176,6 +1184,14 @@ img {
     background-color: transparent;
     outline: 0;
     outline-offset: 0;
+}
+
+.price-controls input::placeholder {
+    color: var(--basic-white);
+    font-size: 14px;
+    font-weight: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .price-controls input[type=number]::-webkit-inner-spin-button, 
