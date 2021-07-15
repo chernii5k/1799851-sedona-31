@@ -894,14 +894,6 @@ footer {
     text-transform: uppercase;
 }
 
-.dates-item input:hover {
-    background-color: #EBEBEB;
-}
-
-.dates-item input:focus {
-    background-color: var(--basic-white);
-}
-
 .calendar {
     position: absolute;
     width: 21px;
@@ -997,7 +989,8 @@ footer {
 }
 
 .search-form input:focus[type="text"] {
-    background-color: #e5e5e5;
+    background-color: var(--basic-white);
+    border: 2px solid #E5E5E5;
 }
 
 .button-number:hover {
