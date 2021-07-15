@@ -884,8 +884,8 @@ img {
 
 .dates-item input {
     padding-left: 13px;
-    height: 38px;
-    width: 332px;
+    height: 34px;
+    width: 328px;
     border: none;
     outline: 0;
     outline-offset: 0;
@@ -915,7 +915,6 @@ img {
 
 .button-calendar {
     display: inline-block;
-    padding: 3px 17px;
     font: inherit;
     font-weight: 700;
     text-align: center;
@@ -1016,7 +1015,7 @@ img {
 
 .dates-item input:focus[type="text"] {
     background-color: var(--basic-white);
-    border: 2px solid #E5E5E5;
+    outline: 2px solid #E5E5E5;
 }
 
 /* .minus::before,
