@@ -13,7 +13,7 @@
   <link href="styles/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body under-footer">
   <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -103,8 +103,7 @@
             <p class="dates-item">
               <label for="arrival-date">Дата заезда:</label>
               <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" aria-label="Поле ввода даты заезда">
-              <button class="button-calendar calendar" type="button"><span
-                  class="visually-hidden">Показать календарь для выбора даты заезда</span></button>
+              <button class="button-calendar calendar" type="button"><span class="visually-hidden">Показать календарь для выбора даты заезда</span></button>
             </p>
           </div>
           <div>
@@ -119,22 +118,22 @@
             <div class="people-quantity-left">
               <p class="counter">
                 <label for="number-of-adults">Взрослые:</label>
-                <button class="button button-number" type="button" aria-label="Уменьшить количество проживающих взрослых">-</button>
+                <button class="button button-number minus" type="button" aria-label="Уменьшить количество проживающих взрослых"><span class="visually-hidden">-</span></button>
                 <input type="text" name="number-of-adults" id="number-of-adults" placeholder="2" aria-label="Поле ввода количества проживающих взрослых">
-                <button class="button button-number" type="button" aria-label="Увеличить количество проживающих взрослых">+</button>
+                <button class="button button-number plus" type="button" aria-label="Увеличить количество проживающих взрослых"><span class="visually-hidden">+</span></button>
               </p>
             </div>
             <div class="people-quantity-right">
               <p class="counter">
                 <label for="number-of-children">Дети:</label>
-                <button class="button button-number" type="button" aria-label="Уменьшить количество проживающих детей">-</button>
+                <button class="button button-number minus" type="button" aria-label="Уменьшить количество проживающих детей"><span class="visually-hidden">-</span></button>
                 <input type="text" name="number-of-children" id="number-of-children" placeholder="0" aria-label="Поле ввода количества проживающиъ детей">
-                <button class="button button-number" type="button" aria-label="Увеличить количество проживающих детей">+</button>
+                <button class="button button-number plus" type="button" aria-label="Увеличить количество проживающих детей"><span class="visually-hidden">+</span></button>
               </p>
             </div>
           </div>
         </div>
-        <button class="button modal-button" type="button" aria-label="Показать доступные результаты в эти даты"><span>Найти</span></button>
+        <button class="button modal-button" type="button" aria-label="Показать доступные варианты с учетом введенных данных"><span>Найти</span></button>
       </form>
     </section>
     <div class="map shadow-1">
@@ -147,29 +146,29 @@
   <footer class="main-footer container shadow-1">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как с нами связаться?</h2>
-      <p>
-        <a href="blank.html"><span class="contacts-text">#visitSEDONA</span></a><br>
-        <a class="contacts-phone" href="tel:+78005558628"><span class="contacts-text">+7 800 5558628</span></a>
+      <p class="contacts-text">
+        <a href="blank.html"  aria-label="Хэштэг #visitSEDONA">#visitSEDONA</a><br>
+        <a class="contacts-phone" href="tel:+78005558628"  aria-label="Контактный телефон +7 800 5558628">+7 800 5558628</a>
       </p>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Наши соц. сети</h2>
       <ul class="social">
         <li>
-          <a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          <a class="social-button twitter" href="#" ><span class="visually-hidden">Перейти в Twitter</span></a>
         </li>
         <li>
-          <a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          <a class="social-button facebook" href="#"><span class="visually-hidden">Перейти на Facebook</span></a>
         </li>
         <li>
-          <a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+          <a class="social-button youtube" href="#"><span class="visually-hidden">Перейти в Youtube</span></a>
         </li>
       </ul>
     </section>
     <section class="footer-copyright">
       <h2 class="visually-hidden">Copyright</h2>
       <p class="center-copyright">Website by
-        <a class="copyright" href="https://htmlacademy.ru"></a>
+        <a class="copyright" href="https://htmlacademy.ru" aria-label="Перейти на страницу разработчика сайта"></a>
       </p>
     </section>
   </footer>

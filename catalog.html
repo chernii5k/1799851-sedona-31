@@ -13,7 +13,7 @@
 <body class="page-body">
   <header class="main-header container">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+      <a class="main-header-logo" href="index.html" aria-label="Логотип. Вернуться на главную страницу">
         <img src="img/catalog/logotype.svg" width="138" height="70" alt="">
       </a>
       <ul class="site-navigation main-navigation-wrapper">
@@ -32,16 +32,15 @@
           <legend class="legend-text">Инфраструктура:</legend>
           <ul class="sort-list">
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="pool" id="filter-pool" aria-label="Выбрать пункт сортировки - Бассейн" checked>
               <label for="filter-pool">Бассейн</label>
             </li>
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="parking-lot"
-                id="filter-parking-lot">
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="parking-lot" id="filter-parking-lot" aria-label="Выбрать - пункт сортировки - Парковка">
               <label for="filter-parking-lot">Парковка</label>
             </li>
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi" aria-label="Выбрать пункт сортировки - Wi-Fi">
               <label for="filter-wifi">Wi-Fi</label>
             </li>
           </ul>
@@ -50,17 +49,15 @@
           <legend class="legend-text">Тип жилья:</legend>
           <ul class="sort-list">
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" aria-label="Выбрать пункт сортировки - Гостиница" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="motel" id="filter-parking-motel"
-                checked>
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="motel" id="filter-parking-motel" aria-label="Выбрать пункт сортировки - Мотель" checked>
               <label for="filter-parking-motel">Мотель</label>
             </li>
             <li class="sort-item">
-              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="apartmens" id="filter-apartmens"
-                checked>
+              <input class="sort-input-checkbox visually-hidden" type="checkbox" name="apartmens" id="filter-apartmens" aria-label="Выбрать пункт сортировки - Апартаменты" checked>
               <label for="filter-apartmens">Апартаменты</label>
             </li>
           </ul>
@@ -70,18 +67,18 @@
           <div class="range-filter">
             <div class="price-controls">
               <label for="min-price" class="visually-hidden"> Минимальная цена</label>
-              <input class="min-price" type="number" name="min-price" id="min-price" placeholder="ОТ 0">
+              <input class="min-price" type="number" name="min-price" id="min-price" placeholder="ОТ 0" aria-label="Поле ввода минимальной цены поиска">
               <label for="max-price" class="visually-hidden"> Максимальная цена</label>
-              <input class="max-price" type="number" name="max-price" id="max-price" placeholder="ДО 3000">
+              <input class="max-price" type="number" name="max-price" id="max-price" placeholder="ДО 3000" aria-label="Поле ввода максимальной цены поиска">
             </div>
             <div class="range-controls">
               <div class="scale">
                 <div class="bar" style="width: 30%; margin-left: 10%;"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0" style="left: 10%"></div>
-              <div class="toggle toggle-max" tabindex="0" style="left: 40%"></div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 10%" aria-label="Перевести ручку диапазона минимальной цены"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 40%" aria-label="Перевести ручку диапазона максимальной цены"></div>
             </div>
-            <button class="button-show" type="submit">Показать</button>
+            <button class="button-show" type="submit" aria-label="Показать результаты поиска">Показать</button>
           </div>
         </fieldset>
       </form>
@@ -90,13 +87,13 @@
       <h3>Найдено: 3</h3>
       <p>Сортировка:</p>
       <ul class="result-list">
-        <li class="result-item"><a href="#">По цене</a></li>
-        <li class="result-item"><a href="#">По типу</a></li>
-        <li class="result-item"><a href="#">По рейтингу</a></li>
+        <li><a href="#"  class="result-current" aria-label="Сортировать по цене">По цене</a></li>
+        <li><a href="#" aria-label="Сортировать по типу">По типу</a></li>
+        <li><a href="#" aria-label="Сортировать по рейтингу">По рейтингу</a></li>
       </ul>
       <div class="up-down">
-        <a href="#" class="up"></a>
-        <a href="#" class="down"></a>
+        <a href="#" class="up" aria-label="Показать по возрастанию"></a>
+        <a href="#" class="down" aria-label="Показать по убыванию"></a>
       </div>
     </section>
     <section class="choice">
@@ -113,8 +110,8 @@
               <p>Гостиница от 4000р</p>
             </div>
             <div class="hotel-button">
-              <a href="#" class="button button-details">Подробнее</a>
-              <button class="button" type="submit">Забронировать</button>
+              <a href="#" class="button button-details" aria-label="Перейти на страницу с подробным описанием отеля">Подробнее</a>
+              <button class="button" type="submit" aria-label="Забронировать отель">Забронировать</button>
             </div>
           </div>
           <div class="rating">
@@ -133,8 +130,8 @@
               <p>Мотель от 3000р</p>
             </div>
             <div class="hotel-button">
-              <a href="#" class="button button-details">Подробнее</a>
-              <button class="button" type="submit">Забронировать</button>
+              <a href="#" class="button button-details" aria-label="Перейти на страницу с подробным описанием отеля">Подробнее</a>
+              <button class="button" type="submit" aria-label="Забронировать отель">Забронировать</button>
             </div>
           </div>
           <div class="rating">
@@ -153,8 +150,8 @@
               <p>Апартаменты от 2000р</p>
             </div>
             <div class="hotel-button">
-              <a href="#" class="button button-details">Подробнее</a>
-              <button class="button" type="submit">Забронировать</button>
+              <a href="#" class="button button-details" aria-label="Перейти на страницу с подробным описанием отеля">Подробнее</a>
+              <button class="button" type="submit" aria-label="Забронировать отель">Забронировать</button>
             </div>
           </div>
           <div class="rating">
@@ -168,29 +165,29 @@
   <footer class="main-footer container shadow-1">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как с нами связаться?</h2>
-      <p>
-        <a href="blank.html"><span class="contacts-text">#visitSEDONA</span></a><br>
-        <a class="contacts-phone" href="tel:+78005558628"><span class="contacts-text">+7 800 5558628</span></a>
+      <p class="contacts-text">
+        <a href="blank.html"  aria-label="Хэштэг #visitSEDONA">#visitSEDONA</a><br>
+        <a class="contacts-phone" href="tel:+78005558628"  aria-label="Контактный телефон +7 800 5558628">+7 800 5558628</a>
       </p>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Наши соц. сети</h2>
       <ul class="social">
         <li>
-          <a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          <a class="social-button twitter" href="#" ><span class="visually-hidden">Перейти в Twitter</span></a>
         </li>
         <li>
-          <a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          <a class="social-button facebook" href="#"><span class="visually-hidden">Перейти на Facebook</span></a>
         </li>
         <li>
-          <a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+          <a class="social-button youtube" href="#"><span class="visually-hidden">Перейти в Youtube</span></a>
         </li>
       </ul>
     </section>
     <section class="footer-copyright">
       <h2 class="visually-hidden">Copyright</h2>
       <p class="center-copyright">Website by
-        <a class="copyright" href="https://htmlacademy.ru"></a>
+        <a class="copyright" href="https://htmlacademy.ru" aria-label="Перейти на страницу разработчика сайта"></a>
       </p>
     </section>
   </footer>
