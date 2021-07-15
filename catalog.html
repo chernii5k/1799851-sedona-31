@@ -17,17 +17,17 @@
         <img src="img/catalog/logotype.svg" width="138" height="70" alt="">
       </a>
       <ul class="site-navigation main-navigation-wrapper">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a class="catalog-current" href="catalog.html">Гостиницы</a></li>
+        <li><a href="blank.html">Информация</a></li>
+        <li><a href="blank.html">Фото и видео</a></li>
+        <li><a href="blank.html">Карта штата</a></li>
+        <li><a class="catalog-current" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main class="catalog container">
     <section>
       <h2 class="visually-hidden">Фильтр жилья</h2>
-      <form class="sort-form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="sort-form" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="fieldset-content">
           <legend class="legend-text">Инфраструктура:</legend>
           <ul class="sort-list">
@@ -113,9 +113,7 @@
               <p>Гостиница от 4000р</p>
             </div>
             <div class="hotel-button">
-              <form action="#" method="GET">
-                <button type="button" class="button button-details">Подробнее</button>
-              </form>
+              <a href="#" class="button button-details">Подробнее</a>
               <button class="button" type="submit">Забронировать</button>
             </div>
           </div>
@@ -135,9 +133,7 @@
               <p>Мотель от 3000р</p>
             </div>
             <div class="hotel-button">
-              <form action="#" method="GET">
-                <button type="button" class="button button-details">Подробнее</button>
-              </form>
+              <a href="#" class="button button-details">Подробнее</a>
               <button class="button" type="submit">Забронировать</button>
             </div>
           </div>
@@ -157,9 +153,7 @@
               <p>Апартаменты от 2000р</p>
             </div>
             <div class="hotel-button">
-              <form action="#" method="GET">
-                <button type="button" class="button button-details">Подробнее</button>
-              </form>
+              <a href="#" class="button button-details">Подробнее</a>
               <button class="button" type="submit">Забронировать</button>
             </div>
           </div>
@@ -171,12 +165,12 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer container">
+  <footer class="main-footer container shadow-1">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как с нами связаться?</h2>
       <p>
-        <a href="blank.html">#visit SEDONA</a><br>
-        <a class="contacts-phone" href="tel:+78005558628">+7 800 5558628</a>
+        <a href="blank.html"><span class="contacts-text">#visitSEDONA</span></a><br>
+        <a class="contacts-phone" href="tel:+78005558628"><span class="contacts-text">+7 800 5558628</span></a>
       </p>
     </section>
     <section class="footer-social">
