@@ -978,6 +978,8 @@ footer {
     margin: 0;
     padding: 0;
     background-color: var(--basic-easy-grey);
+    font-size: 26px;
+    color: #a9a9a9;
 }
 
 .search-form input[type="text"] {
@@ -990,7 +992,8 @@ footer {
 
 .search-form input:focus[type="text"] {
     background-color: var(--basic-white);
-    border: 2px solid #E5E5E5;
+    border: 2px solid rgba(230, 230, 230, 0);
+
 }
 
 .button-number:hover {
